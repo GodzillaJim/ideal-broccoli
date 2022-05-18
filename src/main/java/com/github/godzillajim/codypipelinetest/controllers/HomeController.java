@@ -19,4 +19,9 @@ public class HomeController {
     public Integer getRandomNumber(){
         return random.nextInt(10000);
     }
+
+    @GetMapping("/long")
+    public String getAnotherRandomLong(){
+        return "Another random Long number"+ random.nextLong();
+    }
 }
